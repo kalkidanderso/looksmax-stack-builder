@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Softmax Stack Architect & Harm Reduction Engine — looksmaxxing.guide</title>
+  <meta name="description" content="Build your evidence-backed daily softmaxxing stack with real-time medical harm reduction, protocol scoring, and AI-search optimization." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;700;800&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-wrapper">
+    <!-- Header -->
+    <header class="navbar">
+      <div class="nav-container">
+        <div class="brand">
+          <div class="logo-icon"><i data-lucide="shield-check"></i></div>
+          <div class="logo-text">
+            <span class="brand-name">looks<span class="highlight">maxxing</span>.guide</span>
+            <span class="badge-tool">STACK ARCHITECT v2.6</span>
+          </div>
+        </div>
+        <div class="nav-actions">
+          <div class="live-indicator">
+            <span class="dot pulse"></span>
+            <span class="live-text">Evidence Engine Active</span>
+          </div>
+          <button id="reset-btn" class="btn-ghost"><i data-lucide="refresh-cw"></i> Reset</button>
+          <button id="export-json-btn" class="btn-secondary"><i data-lucide="download"></i> Export Stack</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="tool-hero">
+        <div class="hero-tag"><i data-lucide="sparkles"></i> AI-Engineered Softmax Protocol Builder</div>
+        <h1>Personalized Softmax Stack & <span class="gradient-text">Harm Reduction Engine</span></h1>
+        <p class="hero-subtitle">
+          Design an evidence-led daily routine tailored to your aesthetic goals. Built with real-time medical safety triage to eliminate dangerous trend misinformation.
+        </p>
+
+        <!-- Progress Steps Tracker -->
+        <div class="stepper-bar">
+          <div class="step-item active" data-step="1">
+            <div class="step-num">1</div>
+            <div class="step-label">Focus & Goals</div>
+          </div>
+          <div class="step-line"></div>
+          <div class="step-item" data-step="2">
+            <div class="step-num">2</div>
+            <div class="step-label">Protocol Selection</div>
+          </div>
+          <div class="step-line"></div>
+          <div class="step-item" data-step="3">
+            <div class="step-num">3</div>
+            <div class="step-label">Safety Triage</div>
+          </div>
+          <div class="step-line"></div>
+          <div class="step-item" data-step="4">
+            <div class="step-num">4</div>
+            <div class="step-label">Daily Schedule & Export</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dynamic Step Panels -->
+      <div class="workspace-grid">
+        <!-- Left Panel: Interactive Wizard Steps -->
+        <div class="wizard-container glass-panel">
+          
+          <!-- STEP 1: Focus & Profile -->
+          <div id="step-1" class="step-panel active-panel">
+            <div class="panel-header">
+              <h2><i data-lucide="target"></i> Step 1: Select Your Aesthetic Focus</h2>
+              <p>Choose the target areas you want to optimize in your daily routine.</p>
+            </div>
+
+            <div class="pillars-grid">
+              <label class="pillar-card" data-key="skincare">
+                <input type="checkbox" name="pillars" value="skincare" checked />
+                <div class="pillar-icon" style="--accent: #D19C14;"><i data-lucide="sparkles"></i></div>
+                <div class="pillar-info">
+                  <h3>Skincare & Complexion</h3>
+                  <p>Barrier health, acne control, anti-aging, texture</p>
+                </div>
+                <div class="check-mark"><i data-lucide="check"></i></div>
+              </label>
+
+              <label class="pillar-card" data-key="jawline">
+                <input type="checkbox" name="pillars" value="jawline" checked />
+                <div class="pillar-icon" style="--accent: #E5443B;"><i data-lucide="smile"></i></div>
+                <div class="pillar-info">
+                  <h3>Jawline & Facial Structure</h3>
+                  <p>Masseter balance, tongue posture, submental fat</p>
+                </div>
+                <div class="check-mark"><i data-lucide="check"></i></div>
+              </label>
+
+              <label class="pillar-card" data-key="grooming">
+                <input type="checkbox" name="pillars" value="grooming" />
+                <div class="pillar-icon" style="--accent: #9B59B6;"><i data-lucide="scissors"></i></div>
+                <div class="pillar-info">
+                  <h3>Hair & Grooming</h3>
+                  <p>Scalp density, beard shaping, eyebrow framing</p>
+                </div>
+                <div class="check-mark"><i data-lucide="check"></i></div>
+              </label>
+
+              <label class="pillar-card" data-key="posture">
+                <input type="checkbox" name="pillars" value="posture" />
+                <div class="pillar-icon" style="--accent: #27AE60;"><i data-lucide="user-check"></i></div>
+                <div class="pillar-info">
+                  <h3>Posture & Neck Mechanics</h3>
+                  <p>Forward head posture fix, sternocleidomastoid balance</p>
+                </div>
+                <div class="check-mark"><i data-lucide="check"></i></div>
+              </label>
+
+              <label class="pillar-card" data-key="sleep">
+                <input type="checkbox" name="pillars" value="sleep" checked />
+                <div class="pillar-icon" style="--accent: #3498DB;"><i data-lucide="moon"></i></div>
+                <div class="pillar-info">
+                  <h3>Sleep Architecture & Recovery</h3>
+                  <p>Circadian rhythm alignment, lymphatic drainage</p>
+                </div>
+                <div class="check-mark"><i data-lucide="check"></i></div>
+              </label>
+
+              <label class="pillar-card" data-key="fitness">
+                <input type="checkbox" name="pillars" value="fitness" />
+                <div class="pillar-icon" style="--accent: #E67E22;"><i data-lucide="activity"></i></div>
+                <div class="pillar-info">
+                  <h3>Body Composition & Tone</h3>
+                  <p>Clavicle presentation, shoulder-to-waist ratio</p>
+                </div>
+                <div class="check-mark"><i data-lucide="check"></i></div>
+              </label>
+            </div>
+
+            <div class="profile-config">
+              <div class="config-item">
+                <label><i data-lucide="clock"></i> Daily Time Budget</label>
+                <select id="time-budget">
+                  <option value="15">15 mins/day (Minimalist)</option>
+                  <option value="30" selected>30 mins/day (Balanced)</option>
+                  <option value="45">45+ mins/day (Comprehensive)</option>
+                </select>
+              </div>
+              <div class="config-item">
+                <label><i data-lucide="shield"></i> Harm Tolerance Level</label>
+                <select id="harm-tolerance">
+                  <option value="zero" selected>Zero-Risk (Strict Medical Consensus)</option>
+                  <option value="cautious">Cautious (Non-Invasive Softmax Only)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="wizard-footer">
+              <button class="btn-primary next-step-btn" data-next="2">
+                Continue to Protocols <i data-lucide="arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2: Protocol Selection Matrix -->
+          <div id="step-2" class="step-panel">
+            <div class="panel-header">
+              <h2><i data-lucide="layers"></i> Step 2: Select Evidence-Based Protocols</h2>
+              <p>Filter by tier and select verified routines into your stack.</p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="filter-tabs">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="skincare">Skincare</button>
+              <button class="filter-btn" data-filter="jawline">Jawline</button>
+              <button class="filter-btn" data-filter="grooming">Grooming</button>
+              <button class="filter-btn" data-filter="sleep">Sleep & Posture</button>
+            </div>
+
+            <!-- Protocols Grid -->
+            <div id="protocols-list" class="protocols-grid">
+              <!-- Rendered via JS -->
+            </div>
+
+            <div class="wizard-footer">
+              <button class="btn-ghost prev-step-btn" data-prev="1"><i data-lucide="arrow-left"></i> Back</button>
+              <button class="btn-primary next-step-btn" data-next="3">
+                Run Safety Triage <i data-lucide="shield-alert"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 3: Medical Harm Reduction Triage -->
+          <div id="step-3" class="step-panel">
+            <div class="panel-header">
+              <h2><i data-lucide="shield-alert"></i> Step 3: Harm Reduction & Trend Checker</h2>
+              <p>Test any viral trend or routine against medical consensus before adding it.</p>
+            </div>
+
+            <!-- Search dangerous trend box -->
+            <div class="trend-search-box">
+              <div class="input-wrap">
+                <i data-lucide="search"></i>
+                <input type="text" id="trend-input" placeholder="Type a trend (e.g., Bonesmashing, Aqualyx, DIY peels, Mewing, Gua Sha)..." />
+                <button id="check-trend-btn" class="btn-accent">Analyze Safety</button>
+              </div>
+              <div class="quick-chips">
+                <span>Try:</span>
+                <button class="chip-btn" data-trend="Bonesmashing">Hammer Bonesmashing</button>
+                <button class="chip-btn" data-trend="Aqualyx">Injectable Fat Dissolvers</button>
+                <button class="chip-btn" data-trend="Mewing">Proper Tongue Posture</button>
+                <button class="chip-btn" data-trend="Scalp Microneedling">Scalp Microneedling</button>
+              </div>
+            </div>
+
+            <!-- Analysis Result Display -->
+            <div id="triage-result" class="triage-card default-triage">
+              <div class="triage-icon"><i data-lucide="shield-check"></i></div>
+              <div class="triage-content">
+                <h3>Medical Safety Status: Clean Stack</h3>
+                <p>All currently selected protocols match low-risk dermatological & musculoskeletal evidence.</p>
+              </div>
+            </div>
+
+            <!-- Stack Warnings Summary -->
+            <div class="stack-warnings-box">
+              <h3><i data-lucide="alert-triangle"></i> Stack Safety Audit</h3>
+              <div id="active-warnings-list">
+                <p class="empty-warn">No hazardous protocols detected in your active selection.</p>
+              </div>
+            </div>
+
+            <div class="wizard-footer">
+              <button class="btn-ghost prev-step-btn" data-prev="2"><i data-lucide="arrow-left"></i> Back</button>
+              <button class="btn-primary next-step-btn" data-next="4">
+                Generate Daily Schedule <i data-lucide="calendar"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 4: Schedule & Export -->
+          <div id="step-4" class="step-panel">
+            <div class="panel-header">
+              <h2><i data-lucide="calendar"></i> Step 4: Your Daily Softmax Schedule</h2>
+              <p>Interactive routine execution timeline with citations and export options.</p>
+            </div>
+
+            <div class="schedule-timeline">
+              <!-- Morning -->
+              <div class="time-block">
+                <div class="time-header morning">
+                  <i data-lucide="sun"></i> Morning Protocol (AM)
+                </div>
+                <div id="am-checklist" class="checklist-group">
+                  <!-- JS injected -->
+                </div>
+              </div>
+
+              <!-- Midday / Afternoon -->
+              <div class="time-block">
+                <div class="time-header afternoon">
+                  <i data-lucide="zap"></i> Midday Habit & Maintenance
+                </div>
+                <div id="pm-checklist" class="checklist-group">
+                  <!-- JS injected -->
+                </div>
+              </div>
+
+              <!-- Night -->
+              <div class="time-block">
+                <div class="time-header night">
+                  <i data-lucide="moon"></i> Night Protocol & Recovery (PM)
+                </div>
+                <div id="night-checklist" class="checklist-group">
+                  <!-- JS injected -->
+                </div>
+              </div>
+            </div>
+
+            <div class="export-banner">
+              <div class="export-text">
+                <h3>Ready to ship your personal stack?</h3>
+                <p>Download your Markdown stack file or copy Schema.org metadata for AI search indexing.</p>
+              </div>
+              <div class="export-buttons">
+                <button id="copy-markdown-btn" class="btn-secondary"><i data-lucide="copy"></i> Copy Markdown</button>
+                <button id="copy-schema-btn" class="btn-accent"><i data-lucide="code"></i> Copy JSON-LD Schema</button>
+              </div>
+            </div>
+
+            <div class="wizard-footer">
+              <button class="btn-ghost prev-step-btn" data-prev="3"><i data-lucide="arrow-left"></i> Back</button>
+              <button id="finish-btn" class="btn-success">
+                <i data-lucide="check-circle"></i> Save & Lock Stack
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Panel: Real-Time Scorecard & Diagnostics -->
+        <aside class="dashboard-sidebar glass-panel">
+          <div class="sidebar-header">
+            <h3><i data-lucide="activity"></i> Stack Metrics & Diagnostics</h3>
+          </div>
+
+          <!-- Overall Scores -->
+          <div class="score-card">
+            <div class="score-dial">
+              <svg viewBox="0 0 100 100" class="dial-svg">
+                <circle class="dial-bg" cx="50" cy="50" r="42"></circle>
+                <circle id="score-ring" class="dial-progress" cx="50" cy="50" r="42" stroke-dasharray="264" stroke-dashoffset="50"></circle>
+              </svg>
+              <div class="score-value">
+                <span id="score-number">88</span>
+                <span class="score-label">SOFTMAX INDEX</span>
+              </div>
+            </div>
+
+            <div class="metrics-list">
+              <div class="metric-row">
+                <span class="metric-name"><i data-lucide="shield-check"></i> Safety Rating</span>
+                <span id="metric-safety" class="metric-status status-high">100% (Clean)</span>
+              </div>
+              <div class="metric-row">
+                <span class="metric-name"><i data-lucide="clock"></i> Est. Time</span>
+                <span id="metric-time" class="metric-status">25 min / day</span>
+              </div>
+              <div class="metric-row">
+                <span class="metric-name"><i data-lucide="award"></i> Tier Mix</span>
+                <span id="metric-tiers" class="metric-status">3 S-Tier, 2 A-Tier</span>
+              </div>
+              <div class="metric-row">
+                <span class="metric-name"><i data-lucide="book-open"></i> Citations</span>
+                <span id="metric-citations" class="metric-status">8 Peer-Reviewed</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Selected Stack Quick View -->
+          <div class="quick-stack-box">
+            <h4><i data-lucide="check-square"></i> Active Protocols (<span id="active-count">0</span>)</h4>
+            <ul id="selected-list" class="mini-stack-list">
+              <!-- Injected by JS -->
+            </ul>
+          </div>
+
+          <!-- Harm Reduction Highlight Box -->
+          <div class="harm-policy-box">
+            <div class="policy-title"><i data-lucide="info"></i> Editorial Standard</div>
+            <p>
+              <code>looksmaxxing.guide</code> strictly opposes high-risk non-medical procedures (hammer bonesmashing, unregulated acid injections, extreme jaw drills). Every protocol here is rated for safety first.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="footer-container">
+        <p>© 2026 looksmaxxing.guide · Softmax Stack Architect & Harm Reduction Engine · Evidence-led self-improvement for men.</p>
+        <p class="disclaimer">Educational tool only. Not medical advice. Always consult a board-certified dermatologist or healthcare provider.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast hidden">
+    <i data-lucide="check-circle"></i> <span id="toast-msg">Copied to clipboard!</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
